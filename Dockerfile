@@ -21,4 +21,4 @@ LABEL org.label-schema.build-date="${BUILD_DATE}" \
 COPY --from=builder /usr/local/bin/template /usr/local/bin/template
 COPY --from=builder /usr/local/bin/bank-vaults /usr/local/bin/bank-vaults
 
-RUN apk add --no-cache jq
+RUN apk add --no-cache jq curl
